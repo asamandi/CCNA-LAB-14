@@ -1,0 +1,10 @@
+On R2:
+
+enable
+configure terminal
+
+interface g0/1
+ no ipv6 traffic-filter BLOCK_PC1 in
+
+end
+copy running-config startup-config

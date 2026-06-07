@@ -1,0 +1,9 @@
+PC1
+IPv6 Address: 2001:DB8:1:1::10
+Prefix Length: 64
+Default Gateway: 2001:DB8:1:1::1
+
+Server
+IPv6 Address: 2001:DB8:2:2::100
+Prefix Length: 64
+Default Gateway: 2001:DB8:2:2::1

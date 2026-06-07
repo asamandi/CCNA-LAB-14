@@ -1,0 +1,16 @@
+Part A — Block PC1 Completely
+
+Apply on R2:
+
+enable
+configure terminal
+
+ipv6 access-list BLOCK_PC1
+ deny ipv6 host 2001:DB8:1:1::10 any
+ permit ipv6 any any
+
+interface g0/1
+ ipv6 traffic-filter BLOCK_PC1 in
+
+end
+copy running-config startup-config
