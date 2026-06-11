@@ -1,0 +1,17 @@
+Part B — Block HTTP Only, Allow Ping
+
+Apply on R1:
+
+enable
+configure terminal
+
+ipv6 access-list BLOCK_HTTP
+ permit icmp any any
+ deny tcp 2001:DB8:1:1::/64 host 2001:DB8:2:2::100 eq 80
+ permit ipv6 any any
+
+interface g0/1
+ ipv6 traffic-filter BLOCK_HTTP out
+
+end
+copy running-config startup-config

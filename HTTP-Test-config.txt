@@ -1,6 +1,0 @@
-From PC1 Web Browser:
-http://[2001:DB8:2:2::100]
-
-Expected after Part B:
-HTTP should FAIL
-Ping should still WORK

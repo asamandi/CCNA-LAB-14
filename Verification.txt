@@ -1,4 +1,0 @@
-show ipv6 interface brief
-show ipv6 route
-show ipv6 access-list
-show running-config | section ipv6 access-list
